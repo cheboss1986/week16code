@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage ('sonarqube scan'){
             steps{
-                sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=cheboss1986_week16code'
+                sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=cheboss1986_week16code -Dsonar.organization=cheboss1986 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=37659aefb2bd9d06155926e2e34b7e95fbb9a98b'
             }
         }
         stage ('maven  all commands'){
