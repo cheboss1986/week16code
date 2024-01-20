@@ -2,7 +2,7 @@ pipeline{
     agent{
         label 'ansible'
     }
-    stages{('check current directort'){
+    stages{('check current directory'){
         steps{
             sh 'pwd'
             sh 'whoam'
