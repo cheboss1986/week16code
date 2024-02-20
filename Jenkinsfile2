@@ -19,7 +19,7 @@ pipeline{
             steps{
                 sh 'curl -uadmin:AP2DecFNFDn22Wintb13rM9Qkoo -T \
                 target/bio*.jar\
-                "http://18.206.253.51:8080/artifactory/geoapp/"'
+                "http://18.206.253.51:8081/artifactory/geoapp/"'
             }
         }
         stage('image build'){
